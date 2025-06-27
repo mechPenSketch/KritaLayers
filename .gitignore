@@ -1,5 +1,16 @@
 .dub
 docs.json
 __dummy.html
+docs/
+/krita-layers
+krita-layers.so
+krita-layers.dylib
+krita-layers.dll
+krita-layers.a
+krita-layers.lib
+krita-layers-test-*
+*.exe
+*.pdb
 *.o
 *.obj
+*.lst

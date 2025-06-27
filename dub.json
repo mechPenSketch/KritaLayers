@@ -1,3 +1,12 @@
 {
+	"authors": [
+		"mechPenSketch"
+	],
+	"copyright": "Copyright © 2025, mechPenSketch",
+	"dependencies": {
+		"dlangui": "~>0.10.8"
+	},
+	"description": "Lists layers in a krita file",
+	"license": "MIT",
 	"name": "krita-layers"
 }
