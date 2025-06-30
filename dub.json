@@ -1,3 +1,6 @@
 {
-	"name": "krita-layers"
+	"name": "krita-layers",
+	"dependencies": {
+		"kra-d": "~>0.5.6"
+	}
 }
