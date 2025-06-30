@@ -6,7 +6,7 @@ void main()
 {
     writeln("Enter a krita file:");
     //auto file = File(readln());
-    auto file = File("example.txt");
+    auto file = File("example.kra");
     writeln(file.name);
 
     if (extension(file.name) == ".kra"){
