@@ -1,6 +1,6 @@
 {
 	"name": "krita-layers",
 	"dependencies": {
-		"kra-d": "~>0.5.6"
+		"dxml": "~>0.4.3"
 	}
 }
