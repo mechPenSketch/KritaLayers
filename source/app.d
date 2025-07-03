@@ -26,7 +26,7 @@ void main()
 
         foreach (l; layers)
         {
-            writefln("Layer");
+            writeln(l.attributes);
         }
     } else {
         writeln("This is not a krita file.");
