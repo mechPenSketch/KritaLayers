@@ -10,7 +10,7 @@ void main()
 {
     writeln("Enter a krita file:");
     //auto file = File(readln());
-    string fileName = "example.kra";
+    string fileName = "example2.kra";
     auto file = File(fileName);
     writeln(file.name);
 
@@ -26,7 +26,7 @@ void main()
 
         foreach (l; layers)
         {
-            writeln(l.attributes);
+            writeln(l.children[0]);
         }
     } else {
         writeln("This is not a krita file.");
