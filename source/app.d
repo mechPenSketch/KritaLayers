@@ -15,6 +15,9 @@ extern (C) int UIAppMain(string[] args) {
 
     UIString caption = "Open File"d;
     FileDialog fileDialog = new FileDialog(caption, window);
+    FileFilterEntry filter;
+    filter.filter ~= "*.kra";
+    fileDialog.addFilter(filter);
 
     Button kritBtn = new Button();
     kritBtn.text("Open Krita"d);
