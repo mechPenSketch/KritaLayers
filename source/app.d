@@ -1,7 +1,11 @@
+import dlangui.dialogs.dialog;
 import dlangui.dialogs.filedlg;
 import dlangui.widgets.controls;
 import dlangui.widgets.layouts;
 import dlangui.widgets.widget;
+
+import std.stdio;
+import std.file;
 
 mixin APP_ENTRY_POINT;
 
@@ -18,6 +22,12 @@ extern (C) int UIAppMain(string[] args) {
     FileFilterEntry filter;
     filter.filter ~= "*.kra";
     fileDialog.addFilter(filter);
+    fileDialog.dialogResult.connect(delegate(Dialog dlg, const Action result) {
+        string fileName =  fileDialog.filename();
+        if (isFile(fileName)) {
+            vlayout.addChild(new TextWidget("a", fileName));
+        }
+    });
 
     Button kritBtn = new Button();
     kritBtn.text("Open Krita"d);
