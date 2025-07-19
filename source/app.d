@@ -4,6 +4,9 @@ import dlangui.widgets.controls;
 import dlangui.widgets.layouts;
 import dlangui.widgets.widget;
 
+import kra;
+import kra.parser;
+
 import std.stdio;
 import std.file;
 
@@ -25,7 +28,12 @@ extern (C) int UIAppMain(string[] args) {
     fileDialog.dialogResult.connect(delegate(Dialog dlg, const Action result) {
         string fileName =  fileDialog.filename();
         if (isFile(fileName)) {
-            vlayout.addChild(new TextWidget("a", fileName));
+            auto kraDoc = parseDocument(fileName);
+            
+            foreach (Layer l; kraDoc.layers)
+            {
+                vlayout.addChild(new TextWidget("a", l.name));
+            }
         }
     });
 

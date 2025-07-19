@@ -4,7 +4,8 @@
 	],
 	"copyright": "Copyright © 2025, mechPenSketch",
 	"dependencies": {
-		"dlangui": "~>0.10.8"
+		"dlangui": "~>0.10.8",
+		"kra-d": "~>0.5.6"
 	},
 	"description": "Lists layers in a krita file",
 	"license": "MIT",
