@@ -26,6 +26,14 @@ void main()
 
         foreach (l; layers)
         {
+            /**
+                Printing an array of tuples of attributes
+            */
+            //writeln(l.attributes);
+
+            /**
+                Printing DOMEntity of children data
+            */
             writeln(l.children[0]);
         }
     } else {
